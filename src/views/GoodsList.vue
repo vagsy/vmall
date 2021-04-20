@@ -28,7 +28,7 @@
           <div class="accessory-list-wrap">
             <div class="accessory-list col-4">
               <ul>
-                <li v-for="(item,index) in goodsList">
+                <li v-for="(item,index) in goodsList" :key="item._id">
                   <div class="pic">
                     <a href="#"><img v-lazy="'/static/'+item.productImage" alt=""></a>
                   </div>
